@@ -7,11 +7,14 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import moment from 'moment';
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  mounted() {
+    console.log(moment().format('YYYY-MM-DD HH:mm:ss'));
   }
 }
 </script>
